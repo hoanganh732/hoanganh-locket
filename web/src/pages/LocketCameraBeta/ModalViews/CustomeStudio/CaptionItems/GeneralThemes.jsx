@@ -254,12 +254,12 @@ export default function GeneralThemes({ title }) {
             <button
               key={id}
               onClick={() => handleClick(id)}
-              /* className="flex flex-col whitespace-nowrap bg-base-200 dark:bg-white/30
+               className="flex flex-col whitespace-nowrap bg-base-200 dark:bg-white/30
               backdrop-blur-3xl items-center space-y-1 py-2 px-4 btn h-auto w-auto
-              rounded-3xl font-semibold justify-center"  > */
-            classname="relative flex flex-col whitespace-nowrap backdrop-blur-3xl items-center space-y-1 py-2 px-4 btn h-auto w-auto rounded-3xl font-semibold justify-center"
+              rounded-3xl font-semibold justify-center"  > 
+            /* className="relative flex flex-col whitespace-nowrap backdrop-blur-3xl items-center space-y-1 py-2 px-4 btn h-auto w-auto rounded-3xl font-semibold justify-center"
              style="background: linear-gradient(rgb(45, 154, 255), rgb(107, 220, 255)); color: rgb(255, 255, 255);"
-             >
+               */
              <span className="text-base flex flex-row items-center gap-1">
                 {icon}
                 {id === "location" ? (
