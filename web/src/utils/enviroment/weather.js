@@ -21,7 +21,7 @@ export function useLocationWeather() {
           return; // Dừng luôn, không gọi API nữa
         }
       } catch (e) {
-        // console.warn("Lỗi parse weather cache:", e);
+         console.warn("Lỗi parse weather cache:", e);
       }
     }
 
@@ -48,11 +48,11 @@ export function useLocationWeather() {
             );
           }
         } catch (error) {
-          // console.error("Lỗi khi gọi API thời tiết:", error);
+           console.error("Lỗi khi gọi API thời tiết:", error);
         }
       },
       (err) => {
-        // console.error("Lỗi lấy vị trí:", err);
+         console.error("Lỗi lấy vị trí:", err);
       }
     );
   }, []);
