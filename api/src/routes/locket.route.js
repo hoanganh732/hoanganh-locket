@@ -10,13 +10,13 @@ const { verifyIdToken } = require("../middlewares/verifyToken.js"); // Middlewar
 const saveUploadFile = require("../middlewares/save-upload-files.js"); // Middleware lưu file upload vào req.uploadedFiles
 
 // Thêm route cho API thời tiết
-//router.post("/api/weatherV2", weatherController.getWeather);
+router.post("/api/weatherV2", weatherController.getWeather);
 
 router.post("/login", locketController.login);
 router.get("/logout", locketController.logout);
 router.post("/refresh-token", locketController.refreshToken);
 
-router.post("/getAllFriendsV2", verifyIdToken, locketController.getAllFriends);
+router.post("//getAllFriendsV2", verifyIdToken, locketController.getAllFriends);
 
 router.post("/getInfoUser", verifyIdToken, locketController.getInfoLocket);
 // Hỗ trợ cả POST và GET cho endpoint này anhdev
