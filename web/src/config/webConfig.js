@@ -23,8 +23,8 @@ export const CONFIG = {
 
   app: {
     name: "Locket hoanganh", // Tên app hiển thị
-    author: "dio",
-    shortname: "locketdio",
+    author: "hoanganh", // Tác giả
+    shortname: "hoanganhlocket", // Tên rút gọn (dùng cho URL, tên file,...)
     fullName: "Locket hoanganh - Đăng ảnh & Video lên Locket", // Tên đầy đủ
     clientVersion: "Beta2.5.5.2.4", // Version client
     apiVersion: "v2.2.1", // Version API
