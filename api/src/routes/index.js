@@ -1,4 +1,5 @@
 const locketRouter = require("./locket.route.js");
+const weatherController = require("../controllers/weather.controller.js");
 
 module.exports = (app) => {
   app.get("/", (req, res) => {
@@ -12,6 +13,8 @@ module.exports = (app) => {
   app.get("/v1/public/themes", (req, res) => {
     res.json([]); // Trả về mảng rỗng để hàm .filter() ở front-end không bị lỗi null
   });
+
+  //app.post("/api/weatherV2", weatherController.getWeather);// Thêm route cho API thời tiết
 
   app.use("/locket", locketRouter);
 };
