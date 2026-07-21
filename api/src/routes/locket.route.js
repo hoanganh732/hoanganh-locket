@@ -4,9 +4,13 @@ const handleUpload = require("../middlewares/multipart-upload-support.middleware
 const MAX_IMAGE_COUNT = 1;
 const MAX_VIDEO_COUNT = 1;
 
-const locketController = require("../controllers/locket.controller.js");
-const { verifyIdToken } = require("../middlewares/verifyToken.js");
-const saveUploadFile = require("../middlewares/save-upload-files.js");
+const locketController = require("../controllers/locket.controller.js"); // Thêm controller Locket
+const weatherController = require("../controllers/weather.controller.js"); // Thêm controller thời tiết
+const { verifyIdToken } = require("../middlewares/verifyToken.js"); // Middleware xác thực token Firebase
+const saveUploadFile = require("../middlewares/save-upload-files.js"); // Middleware lưu file upload vào req.uploadedFiles
+
+// Thêm route cho API thời tiết
+router.post("/weatherV2", weatherController.getWeather);
 
 router.post("/login", locketController.login);
 router.get("/logout", locketController.logout);
